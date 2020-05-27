@@ -6,3 +6,12 @@ https://docker-curriculum.com/
 
 ### Hello World
 docker container run hello-world
+
+### Starting your First shell
+
+docker container run alpine sh
+docker container run -it alpine sh    # Run interactively
+
+cat /etc/os-release
+uname -r
+
