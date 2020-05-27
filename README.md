@@ -35,5 +35,11 @@ docker container run -itd 'image name' # Will start new container in detached mo
 docker container rm 'hostname'  # Remove the container with hostname
 docker container rm $(docker container ls -aq) # Remove all containers
 docker image ls
-docker image rm 
+docker image rm 'image-name' 
+
+### Hint
+
+docker container run --rm hello-world  # Run and delete the container after run
+docker container --name container1 hello-world # Will create container with customised name Container1
+
 
