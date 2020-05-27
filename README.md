@@ -20,3 +20,13 @@ uname -r
 https://hub.docker.com
 
 Use Official Tag docker images
+
+### Contianer ls
+
+docker container la -a # List all containers
+hostname # hostname of the container
+docker container start 'Container name' # start the container
+docker container attach 'Container name' # attach/open the running container
+docker container run 'image name' # Will always start new container
+docker container run -itd 'image name' # Will start new container in detached mode
+
