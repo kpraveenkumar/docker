@@ -48,3 +48,6 @@ docker container run nginx
 docker container run -p 80:80 nginx # open browser with localhost to see the service
 docker container run -p 8080:80 nginx # open browser with localhost:8080
 
+### Data in a container
+
+docker container run -p 80:80 --volume /media/praveen/coding/practise/docker/html:/usr/share/nginx/html nginx
