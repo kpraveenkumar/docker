@@ -83,3 +83,14 @@ use ping ip-address of c2 in c1 to communicate with each other
 docker container run -it --rm --name c3 --link c1 alpine sh
 
 ping c1 will work in c3
+
+### User defined networks
+
+docker network ls
+
+docker network create test
+
+docker container run -it --rm --name c1 --network test alpine sh
+docker container run -it --rm --name c2 --network test alpine sh
+
+ping c1 and ping c2 will work in respective containers
