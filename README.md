@@ -72,9 +72,14 @@ Try the following commands
 touch a file in container, which is not seen in another container
 ipaddr of both containers will be different
 
+### Container communication
+docker container run -it --rm --name c2 alpine sh
+docker container run -it --rm --name c1 alpine sh
 
+ifconfig eth0
 
+use ping ip-address of c2 in c1 to communicate with each other
 
-A
-A
-docker 
+docker container run -it --rm --name c3 --link c1 alpine sh
+
+ping c1 will work in c3
