@@ -51,3 +51,30 @@ docker container run -p 8080:80 nginx # open browser with localhost:8080
 ### Data in a container
 
 docker container run -p 80:80 --volume /media/praveen/coding/practise/docker/html:/usr/share/nginx/html nginx
+
+### Isolation
+
+docker achieves isolation through kernal namespaces.
+
+There are three namespaces:
+1. Mount (mnt)
+2. Process ID (pid)
+3. Network (net)
+
+Create two containers with alpine image in two terminals
+
+Try the following commands
+
+1. ls -l
+2. ps -ef
+3. ipaddr
+
+touch a file in container, which is not seen in another container
+ipaddr of both containers will be different
+
+
+
+
+A
+A
+docker 
