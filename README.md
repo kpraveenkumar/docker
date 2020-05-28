@@ -94,3 +94,9 @@ docker container run -it --rm --name c1 --network test alpine sh
 docker container run -it --rm --name c2 --network test alpine sh
 
 ping c1 and ping c2 will work in respective containers
+
+### Hide legacy commands
+
+export DOCKER_HIDE_LEGACY_COMMANDS=true 
+
+in ~/.bashrc or ~/.zshrc
