@@ -42,4 +42,9 @@ docker image rm 'image-name'
 docker container run --rm hello-world  # Run and delete the container after run
 docker container --name container1 hello-world # Will create container with customised name Container1
 
+### Publishing a Service
+
+docker container run nginx
+docker container run -p 80:80 nginx # open browser with localhost to see the service
+docker container run -p 8080:80 nginx # open browser with localhost:8080
 
